@@ -1,0 +1,5 @@
+---
+filebeat_prospectors: []
+
+filebeat_config_dir: /etc/filebeat
+filebeat_config_file: "{{filebeat_config_dir}}/filebeat.yml"

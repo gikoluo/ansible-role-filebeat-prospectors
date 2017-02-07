@@ -1,0 +1,4 @@
+---
+- src: gikoluo.orcal-java
+- src: gikoluo.elasticsearch
+- src: gikoluo.logstash
