@@ -56,7 +56,7 @@ None.
 
     - hosts: logs
       roles:
-        - gikoluo.java
+        - gikoluo.orcal-java
         - gikoluo.elasticsearch
         - gikoluo.logstash
         - gikoluo.filebeat
