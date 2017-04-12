@@ -8,5 +8,4 @@
 - name: restart filebeat
   command: "steve -k restart -s filebeat"
   become: True
-  tags: ["update"]
 
