@@ -4,20 +4,7 @@
 - name: Insert Filebeat prespector to configuration.
   template:
     src: prospector.yml.j2
-    dest: "{{ filebeat_config_dir }}/conf.d/{{ filebeat_prospectors_name }}.conf"
+    dest: "{{ filebeat_config_dir }}/conf.d/{{ filebeat_prospectors_name }}.yml"
   notify: restart filebeat
   become: yes
-
-
-  
-
-# - name: Insert Filebeat prespector to configuration.
-#   lineinfile:
-#     dest: "{{ filebeat_config_file }}"
-#     regexp: "{{'^\\- \\{.*?' + item.fields.beat + '.*\\}$' }}"
-#     line: '- {{ item | to_json }}'
-#     insertafter: "^filebeat.prospectors:$"
-#   with_items: "{{ filebeat_prospectors }}"
-#   notify: restart filebeat
-#   become: yes
 
